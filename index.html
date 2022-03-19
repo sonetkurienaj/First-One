@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>pepsi.com</title>
+	<link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+</head>
+<body>
+	<section class="sec">
+		<header>
+			<a href="#" <img src="logo.png" class="logo"></a>
+			<ul>
+				<li><a href="#">HOME</a></li>
+				<li><a href="#">login</a></li>
+				<li><a href="#">ABOUT</a></li>
+			</ul>
+		</header>
+		<div class="content">
+			<div class="textbox">
+				<h2>That's what<br><span>I like</span></h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat.</p>
+				<a href="#">view all product</a>
+				
+			</div>
+			<div class="imgbox">
+				<img src="./assets/images/pepsi001.png" class="pepsi">
+				
+			</div>
+		</div>
+		 <ul class="thumb">
+		 	<li><img src="./assets/images/pepsi001.png" onclick="imgSlider('./assets/images/pepsi001.png');changeBgColor('#0062be')"></li>
+		 	<li><img src="./assets/images/pepsi002.png" onclick="imgSlider('./assets/images/pepsi002.png');changeBgColor('#e60c2c')"></li>
+		 	<li><img src="./assets/images/pepsi003.png" onclick="imgSlider('./assets/images/pepsi003.png');changeBgColor('#1e1e1e')"></li>
+		 	<li><img src="./assets/images/pepsi001.png" onclick="imgSlider('./assets/images/pepsi001.png');changeBgColor('#0062be')"></li>
+		 </ul>
+		 <ul class="sci">
+		 	<li><img src="./assets/images/facebook.png"></li>
+		 	<li><img src="./assets/images/twitter.png"></li>
+		 	<li><img src="./assets/images/instagram.png"></li>
+		 	
+		 </ul>
+	</section>
+	<script type="text/javascript">
+		function imgSlider(anything)
+		{
+			document.querySelector('.pepsi').src = anything;
+		}
+		function changeBgColor(color){
+			const src = document.querySelector('.sec');
+			sec.style.background = color;
+		}
+	</script>
+
+</body>
+</html>
